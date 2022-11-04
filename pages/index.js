@@ -44,7 +44,7 @@ export default function Home() {
   };
 
   const updateTodo = (todo, title, description) => {
-    setTodos(todos => todos.map((todoMap) => todoMap===(todo) ? {
+    setTodos(todos => todos.map((todoMap) => todoMap===(todo.index) ? {
       id: todoMap.id,
       title: title,
       description: description  
